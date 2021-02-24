@@ -1,5 +1,5 @@
 {
-  "name": "confusion",
+  "name": "bootstrap1.1",
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
@@ -17,5 +17,13 @@
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.12.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adesh698/Coursera.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adesh698/Coursera/issues"
+  },
+  "homepage": "https://github.com/Adesh698/Coursera#readme"
 }
