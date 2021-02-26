@@ -14,7 +14,10 @@
     "lite-server": "^2.3.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "bootstrap": "^4.6.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.12.9"
   },
