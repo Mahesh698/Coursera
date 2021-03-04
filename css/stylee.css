@@ -46,3 +46,42 @@
 .navbar-dark {
      background-color: #508687;
 }
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.carousel {
+    background:#512DA8;
+
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+/* Top navigation tab
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" href="#peter" role="tab" data-toggle="tab">Peter Pan, CEO</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#danny" role="tab" data-toggle="tab">Danny Witherspoon, CFO</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#agumbe"role="tab" data-toggle="tab">Agumbe Tang, CTO</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#alberto" role="tab" data-toggle="tab">Alberto Somayya, Exec. Chef</a>
+</li>
+</ul> */
