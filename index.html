@@ -19,19 +19,16 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41" alt=""></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a> </li>   
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
-                <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
-                </span>
-            </div> 
+                <span class="navbar-text"> <a data-toggle="modal" data-target="#loginModal"> <span class="fa fa-sign-in"></span> Login</a> </span>
+            </div>
         </div>
     </nav>
 
@@ -122,12 +119,91 @@
                     <img src="img/logo.png" class = "img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a id="reserve" class="btn btn-warning btn-lg" data-toggle="tooltip" data-html="true" title="Or Call us at  &lt;br&gt;&lt;strong&gt;+852 12345678&lt;/strong&gt;" data-placement="bottom" role="button">Reserve Table</a>
-                </div>
+                    <a data-toggle="modal" data-target="#reservemodal" id="reserve" class="btn btn-warning btn-lg" data-toggle="tooltip" data-html="true" title="Or Call us at  &lt;br&gt;&lt;strong&gt;+852 12345678&lt;/strong&gt;" data-placement="bottom" role="button">Reserve Table</a>
+                  </div>
             </div>
         </div>
     </header>
     
+    <!-- Assignment 3 Week 3 -->
+
+    <div id="reservemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a table</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <dd class="col-md-2 col-sm-12">Number of Guest</dd>
+                            <dd class="col-md-10 col-sm-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="op" id="op" value="1" checked="">
+                                    <label class="form-check-label">1</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="op" id="op" value="2">
+                                    <label class="form-check-label">2</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="op" id="op" value="3">
+                                    <label class="form-check-label">3</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="op" id="op" value="4">
+                                    <label class="form-check-label">4</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="op" id="op" value="5">
+                                    <label class="form-check-label">5</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="op" id="op" value="6">
+                                    <label class="form-check-label">6</label>
+                                </div>
+                            </dd>
+                        </div>
+                        <div class="form-row">
+                            <dd class="col-md-2 col-sm-12">Section</dd>
+                            <dd class="col-md-10 col-sm-12">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success active">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked=""> Non-Smoking
+                                        </label>
+                                        <label class="btn btn-danger">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                        </label>
+                                    </div>
+                            </dd>     
+                        </div>
+                        <div class="form-row">
+                            <dd class="col-md-2 col-sm-12">Date and Time</dd>
+                            <dd class="col-md-10 col-sm-12">
+                                <div class="form-group row">
+                                    <div class="col-md-5">
+                                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                    </div>
+                                </div>
+                            </dd>
+                        </div>
+                        <div class="form-row">
+                            <dd class="col-md-2 col-sm-12"></dd>
+                            <dd class="col-md-10 col-sm-12">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button> 
+                            </dd>       
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row row-content align-items-center">
